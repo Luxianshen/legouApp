@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/personal_wait_pay"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/medium_text_size"  />
+    </LinearLayout>
+  
+    <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+            <View style="@style/PersonalLine" />
+            <RelativeLayout style="@style/PersonalBottomStyle" >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"     
+            >
+            <TextView
+              android:id="@+id/tvOrderDateFrom"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="2014-8-18"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textSize="12sp" />
+             <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="15dp"  
+                android:text="订单编号:20143Yg"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:text="未支付"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/goodspic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/personal_top_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/clothing_01" />
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/describe"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="25dp"
+	        android:layout_marginLeft="15dp"  
+	        android:text="商品描述" />
+	     <TextView
+            android:id="@+id/tvOrderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+	        android:layout_marginLeft="180dp"  
+            android:text="1080.0元"
+            android:textSize="12sp" />
+		    <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:orientation="horizontal" >
+		    <TextView
+		        android:id="@+id/price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+	            android:layout_marginLeft="15dp"  
+		        android:text="价格" />
+		
+		    <TextView
+		        android:id="@+id/weight"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+	            android:layout_marginLeft="20dp"  
+		        android:text="重量" />
+		
+		    <TextView
+		        android:id="@+id/number"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+	            android:layout_marginLeft="80dp"   
+		        android:text="数量" />
+		    </LinearLayout>
+    	</LinearLayout>
+   </LinearLayout>
+   
+    
+  </RelativeLayout>
+ </LinearLayout>
+</LinearLayout>
+

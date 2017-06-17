@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/cart"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/catergory_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:divider="@drawable/filter_spider_line" >
+    </ListView>
+
+     <LinearLayout
+         style="@style/PersonalMainLayoutStyle"
+         android:layout_height="50dp"
+         android:background="@drawable/android_title_bg" >
+
+            <View style="@style/PersonalLine" />
+            <RelativeLayout style="@style/PersonalBottomStyle" 
+                 android:background="@drawable/android_title_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                
+                android:background="@drawable/android_title_bg" >
+                <Button
+                    android:id="@+id/bt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:background="@drawable/android_title_bg"
+                    android:textSize="16dp"
+                    android:text="结算"
+                    android:textColor="@color/white" >
+                </Button>
+                 
+                <TextView
+                    android:id="@+id/packagefee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="不含运费"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
+                   
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="合计"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/totalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/android_title_bg"
+                    android:text="提交订单"
+                    android:textSize="16dp"
+                    android:textColor="@color/white" >
+                </Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

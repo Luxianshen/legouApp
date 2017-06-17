@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:id="@+id/id_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/personal_all_order"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/medium_text_size"  />
+    </LinearLayout>
+
+     <ListView
+         android:id="@+id/order_list"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:divider="@drawable/filter_spider_line"
+          >
+     </ListView>
+
+</LinearLayout>
